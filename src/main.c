@@ -1,9 +1,8 @@
 #include "raylib.h"
 
+const char *WINDOW_TITLE = "Minigolf";
 const int SCREEN_WIDTH = 800;
 const int SCREEN_HEIGHT = 450;
-
-const char *WINDOW_TITLE = "Minigolf";
 
 int main(void) {
 	InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, WINDOW_TITLE);
