@@ -1,32 +1,45 @@
+#include <stdio.h>
+
 #include "raylib.h"
 
+
 const char *WINDOW_TITLE = "Minigolf";
-const int SCREEN_WIDTH = 800;
-const int SCREEN_HEIGHT = 450;
+const int SCREEN_WIDTH = 1920;
+const int SCREEN_HEIGHT = 1080;
 
 int main(void) {
 	InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, WINDOW_TITLE);
 	SetTargetFPS(60);
+    DisableCursor();
 
-	Texture2D texture = LoadTexture(ASSETS_PATH "penguin.png");
+	Camera cam = {0};
+	cam.position = (Vector3){1.0f, 1.0f, 1.0f};
+	cam.target = (Vector3){0.0f, 0.0f, 0.0f};
+	cam.up = (Vector3){0.0f, 1.0f, 0.0f};
+	cam.fovy = 45.0f;
+	cam.projection = CAMERA_PERSPECTIVE;
+
+	Model m = LoadModel(ASSETS_PATH "ramp.glb");
+	Vector3 pos = {0.0f, 0.0f, 0.0f};
 
 	while (!WindowShouldClose()) {
+		UpdateCamera(&cam, CAMERA_FIRST_PERSON);
+
 		BeginDrawing();
-
 		ClearBackground(RAYWHITE);
-
-		const int texture_x = SCREEN_WIDTH / 2 - texture.width / 2;
-		const int texture_y = SCREEN_HEIGHT / 2 - texture.height / 2;
-		DrawTexture(texture, texture_x, texture_y, WHITE);
-
-		const char *text = "OMG! IT WORKS!";
-		const Vector2 text_size = MeasureTextEx(GetFontDefault(), text, 20, 1);
-		DrawText(text, SCREEN_WIDTH / 2 - text_size.x / 2,
-				 texture_y + texture.height + text_size.y + 10, 20, BLACK);
-
+		BeginMode3D(cam);
+		{
+			DrawModel(m, pos, 1.0f, WHITE);
+			DrawGrid(10, 1.0f);
+		}
+		EndMode3D();
+        {
+            DrawFPS(10, 10);
+        }
 		EndDrawing();
 	}
 
+	UnloadModel(m);
 	CloseWindow();
 
 	return 0;

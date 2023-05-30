@@ -22,3 +22,8 @@ Additionally [CONVENTIONS.md](https://github.com/mrwormhole/minigolf/blob/main/C
     cmake ..
     make minigolf && ./minigolf
 ```
+
+# TODOs
+
+- [ ] create levels, and add box colliders to the meshes
+- [ ] create ball, and add sphere collider to the mesh

@@ -7,3 +7,4 @@
 *.raw binary
 *.obj binary
 *.gltf binary
+*.glb binary
