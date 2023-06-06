@@ -4,9 +4,9 @@ Code element | Convention | Example
 --- | :---: | ---
 Defines | SCREAM_SNAKE_CASE | `#define PLATFORM_DESKTOP`
 Macros(DO NOT USE PLEASE) | SCREAM_SNAKE_CASE | `#define MIN(a,b) (((a)<(b))?(a):(b))`
-Variables | snake_case | `int screen_width = 0;`, `float target_frame_time = 0.016f;`
-Local variables | snake_case | `Vector2 player_position = { 0 };`
-Global variables | snake_case | `bool full_screen = false;`
+Variables | camelCase | `int screenWidth = 0;`, `float targetFrameTime = 0.016f;`
+Local variables | camelCase | `Vector2 playerPosition = { 0 };`
+Global variables | camelCase | `bool phoneScreen = false;`
 Constants | SCREAM_SNAKE_CASE | `const int MAX_VALUE = 8;`
 Pointers | MyType *pointer | `Texture2D *array = NULL;`
 float values | always x.xf | `float gravity = 10.0f`
@@ -18,13 +18,13 @@ Enum | TitleCase | `enum PixelFormat`
 Enum members | SCREAM_SNAKE_CASE | `PIXELFORMAT_UNCOMPRESSED_R8G8B8`
 Struct | TitleCase | `struct Texture2D`, `struct Material`
 Struct typedef | TitleCase | `typedef struct Texture { ... } Texture;`
-Struct members | snake_case | `texture.width_pixels`
+Struct members | camelCase | `texture.widthPixels`
 Functions | TitleCase | `InitWindow()`, `LoadImageFromMemory()`
-Functions params | snake_case | `width_pixels`, `height_pixels`
+Functions params | camelCase | `widthPixels`, `heightPixels`
 Ternary Operator | (condition) ? result1 : result2 | `printf("Value is 0: %s", (value == 0) ? "yes" : "no");`
 
 Other conventions:
  - All defined variables are ALWAYS initialized
  - Use .clang-format
  - Never ever waste a line with opening curly brace `{`
- - I am generally `snake_case` fan for C but due to raylib being used, I had to make some changes, pay attention to some `TitleCase` rules.
+ - I am generally `snake_case` fan for C but due to raylib being used, I had to make some changes, pay attention to some `TitleCase` and `camelCase` rules.
