@@ -9,18 +9,17 @@ Additionally [CONVENTIONS.md](https://github.com/mrwormhole/minigolf/blob/main/C
 
 # Requirements
 
-- Clang
+- Clang (or gcc)
 - CMake
 - Make
 
 # How to Compile
 
 ```sh
-    git clone https://github.com/mrwormhole/minigolf 
-    mkdir build
-    cd build
-    cmake ..
-    make minigolf && ./minigolf
+git clone https://github.com/mrwormhole/minigolf 
+mkdir build && cd ./build
+cmake -D CMAKE_C_COMPILER=clang .. 
+make minigolf && ./minigolf
 ```
 
 # TODOs
