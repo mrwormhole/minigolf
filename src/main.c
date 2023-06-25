@@ -43,12 +43,11 @@ int main(void) {
 	ball->debug_on = true;
 
 	Tile *tiles[TILE_COUNT];
-	int tile_idx = 0;
 
 	for (int i = 0; i < 8; i++) {
 		for (int j = 0; j < 8; j++) {
 			Vector3 position = (Vector3){i - 3.5f, 0, j - 3.5f};
-			tiles[tile_idx] = init_tile(&green_tile_m, position, 1.0f);
+			tiles[i * 8 + j] = init_tile(&green_tile_m, position, 1.0f);
 			if (errno != 0 && errno != EAGAIN) {
 				perror("*** init_tile()");
 				fprintf(
@@ -58,8 +57,7 @@ int main(void) {
 					__FILE__, __LINE__);
 				return EXIT_FAILURE;
 			}
-			tiles[tile_idx]->debug_on = true;
-			tile_idx++;
+			tiles[i * 8 + j]->debug_on = true;
 		}
 	}
 
@@ -68,8 +66,37 @@ int main(void) {
 
 		UpdateCamera(&cam, CAMERA_THIRD_PERSON);
 		bool is_colliding = false;
+		for (int i = 0; i < TILE_COUNT; i++) {
+			Tile *tile = tiles[i];
+			Vector3 tile_position = tile->position;
+			Vector3 tile_size = tile->size;
+
+			f64 ground_offset = tile_size.y / 2;
+
+			BoundingBox bb = (BoundingBox){
+				.min =
+					(Vector3){
+						.x = tile_position.x - tile_size.x / 2,
+						.y = tile_position.y - tile_size.y / 2 + ground_offset,
+						.z = tile_position.z - tile_size.z / 2,
+					},
+				.max =
+					(Vector3){
+						.x = tile_position.x + tile_size.x / 2,
+						.y = tile_position.y + tile_size.y / 2 + ground_offset,
+						.z = tile_position.z + tile_size.z / 2,
+					},
+			};
+
+			if (CheckCollisionBoxSphere(bb, ball->position, ball->radius)) {
+				is_colliding = true;
+				break;
+			}
+		}
 		if (is_colliding) {
 			ball->model = &red_ball_m;
+		} else {
+			ball->model = &blue_ball_m;
 		}
 
 		BeginDrawing();

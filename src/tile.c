@@ -38,7 +38,8 @@ void draw_tile(const Tile *tile) {
 
 	if (tile->debug_on) {
 		Vector3 size = tile->size;
-		position.y += size.y / 2;
+		f64 ground_offset = size.y / 2;
+		position.y += ground_offset;
 		DrawCubeWires(position, size.x, size.y, size.z, PURPLE);
 	}
 }
