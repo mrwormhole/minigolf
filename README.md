@@ -3,24 +3,15 @@
 [![Project Status: WIP – Initial development is in progress, but there has not yet been a stable, usable release suitable for the public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
 
 
-3D minigolf in C(99) and Raylib(master).
-
-Additionally [CONVENTIONS.md](https://github.com/mrwormhole/minigolf/blob/main/CONVENTIONS.md) is inherited from the creator of Raylib. And enforced for this repository. Please consider reading CONVENTIONS.md before opening a PR. Also ensure to run `valgrind` to avoid memory leaks on your code to increase confidence.
+3D minigolf in Godot 4.
 
 # Requirements
 
-- Clang (or gcc)
-- CMake
-- Make
+- Godot 4
 
-# How to Compile
+# Style Guide
 
-```sh
-git clone https://github.com/mrwormhole/minigolf 
-mkdir build && cd ./build
-cmake -D CMAKE_C_COMPILER=clang .. 
-make minigolf && ./minigolf
-```
+- https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_styleguide.html
 
 # TODOs
 

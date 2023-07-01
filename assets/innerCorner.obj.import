@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://br2n84efmfr4q"
+path="res://.godot/imported/innerCorner.obj-a348a832414355cf8a9e2e2cfb287915.mesh"
+
+[deps]
+
+files=["res://.godot/imported/innerCorner.obj-a348a832414355cf8a9e2e2cfb287915.mesh"]
+
+source_file="res://assets/innerCorner.obj"
+dest_files=["res://.godot/imported/innerCorner.obj-a348a832414355cf8a9e2e2cfb287915.mesh", "res://.godot/imported/innerCorner.obj-a348a832414355cf8a9e2e2cfb287915.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

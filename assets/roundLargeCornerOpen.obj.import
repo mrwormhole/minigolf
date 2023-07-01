@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dis7ytl8mji7l"
+path="res://.godot/imported/roundLargeCornerOpen.obj-78ade13ea182715387af4268be784424.mesh"
+
+[deps]
+
+files=["res://.godot/imported/roundLargeCornerOpen.obj-78ade13ea182715387af4268be784424.mesh"]
+
+source_file="res://assets/roundLargeCornerOpen.obj"
+dest_files=["res://.godot/imported/roundLargeCornerOpen.obj-78ade13ea182715387af4268be784424.mesh", "res://.godot/imported/roundLargeCornerOpen.obj-78ade13ea182715387af4268be784424.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

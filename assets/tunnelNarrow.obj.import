@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cxvwg13luqcew"
+path="res://.godot/imported/tunnelNarrow.obj-b342462c603ebc5b7c279e61c367a20e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/tunnelNarrow.obj-b342462c603ebc5b7c279e61c367a20e.mesh"]
+
+source_file="res://assets/tunnelNarrow.obj"
+dest_files=["res://.godot/imported/tunnelNarrow.obj-b342462c603ebc5b7c279e61c367a20e.mesh", "res://.godot/imported/tunnelNarrow.obj-b342462c603ebc5b7c279e61c367a20e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

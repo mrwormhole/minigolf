@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bmreg8h831b1a"
+path="res://.godot/imported/hillRound.obj-94ae3072707c67abf792209344b61975.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hillRound.obj-94ae3072707c67abf792209344b61975.mesh"]
+
+source_file="res://assets/hillRound.obj"
+dest_files=["res://.godot/imported/hillRound.obj-94ae3072707c67abf792209344b61975.mesh", "res://.godot/imported/hillRound.obj-94ae3072707c67abf792209344b61975.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

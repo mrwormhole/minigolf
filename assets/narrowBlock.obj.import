@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bq4m3lnmahwku"
+path="res://.godot/imported/narrowBlock.obj-b6aab53bd7b82397d78d6ab032d32280.mesh"
+
+[deps]
+
+files=["res://.godot/imported/narrowBlock.obj-b6aab53bd7b82397d78d6ab032d32280.mesh"]
+
+source_file="res://assets/narrowBlock.obj"
+dest_files=["res://.godot/imported/narrowBlock.obj-b6aab53bd7b82397d78d6ab032d32280.mesh", "res://.godot/imported/narrowBlock.obj-b6aab53bd7b82397d78d6ab032d32280.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

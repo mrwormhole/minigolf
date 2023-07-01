@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://d35hfcn2rl0s2"]
+
+[ext_resource type="ArrayMesh" uid="uid://dgbgyopnehakm" path="res://assets/open.obj" id="1_8w6kt"]
+[ext_resource type="Material" uid="uid://b1y324tp63qf7" path="res://materials/green_tile.material" id="2_hfkh0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s6iep"]
+size = Vector3(1, 0.064, 1)
+
+[node name="Tile" type="StaticBody3D"]
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_8w6kt")
+skeleton = NodePath("")
+surface_material_override/0 = ExtResource("2_hfkh0")
+
+[node name="Collider" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.032, 0)
+shape = SubResource("BoxShape3D_s6iep")

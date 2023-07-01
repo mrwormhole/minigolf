@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://qwyh6cftnntc"]
+
+[ext_resource type="ArrayMesh" uid="uid://dnb1gd814mwep" path="res://assets/ball_red.obj" id="1_70kv7"]
+[ext_resource type="Material" uid="uid://d0lat1ynodpn8" path="res://materials/blue_ball.material" id="2_5wycd"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_hahyc"]
+radius = 0.0349296
+
+[node name="Ball" type="RigidBody3D"]
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_70kv7")
+surface_material_override/0 = ExtResource("2_5wycd")
+
+[node name="Collider" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_hahyc")

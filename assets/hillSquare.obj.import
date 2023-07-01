@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dktud1a1jgay0"
+path="res://.godot/imported/hillSquare.obj-940b2515522a106de2302d1c0860e126.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hillSquare.obj-940b2515522a106de2302d1c0860e126.mesh"]
+
+source_file="res://assets/hillSquare.obj"
+dest_files=["res://.godot/imported/hillSquare.obj-940b2515522a106de2302d1c0860e126.mesh", "res://.godot/imported/hillSquare.obj-940b2515522a106de2302d1c0860e126.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

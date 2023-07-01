@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b5fqolvpnf3ua"
+path="res://.godot/imported/bumpDownWalls.obj-1a9e59883ea218e0d83cf5540c4579e0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bumpDownWalls.obj-1a9e59883ea218e0d83cf5540c4579e0.mesh"]
+
+source_file="res://assets/bumpDownWalls.obj"
+dest_files=["res://.godot/imported/bumpDownWalls.obj-1a9e59883ea218e0d83cf5540c4579e0.mesh", "res://.godot/imported/bumpDownWalls.obj-1a9e59883ea218e0d83cf5540c4579e0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,10 +1,2 @@
-# Asset files should be treated by git as binary
-*.png binary
-*.jpg binary
-*.ttf binary
-*.mp3 binary
-*.wav binary
-*.raw binary
-*.obj binary
-*.gltf binary
-*.glb binary
+# Normalize EOL for all files that Git considers text files.
+* text=auto eol=lf

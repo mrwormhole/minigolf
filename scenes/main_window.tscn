@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://emixlubexsbv"]
+
+[ext_resource type="PackedScene" uid="uid://qwyh6cftnntc" path="res://scenes/ball.tscn" id="1_8jumd"]
+[ext_resource type="PackedScene" uid="uid://d35hfcn2rl0s2" path="res://scenes/tile.tscn" id="2_gscbo"]
+
+[node name="Main" type="Node"]
+
+[node name="Ball" parent="." instance=ExtResource("1_8jumd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.333, 0)
+
+[node name="Tile" parent="." instance=ExtResource("2_gscbo")]
+
+[node name="Tile2" parent="." instance=ExtResource("2_gscbo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Tile3" parent="." instance=ExtResource("2_gscbo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+
+[node name="Tile4" parent="." instance=ExtResource("2_gscbo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Tile5" parent="." instance=ExtResource("2_gscbo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 1, 1)
+light_energy = 2.0
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 1, 1)

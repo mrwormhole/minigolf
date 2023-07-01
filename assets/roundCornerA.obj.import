@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cdvnsc0ildd1o"
+path="res://.godot/imported/roundCornerA.obj-cbfa1d60d5f17f9558111769b5a42b20.mesh"
+
+[deps]
+
+files=["res://.godot/imported/roundCornerA.obj-cbfa1d60d5f17f9558111769b5a42b20.mesh"]
+
+source_file="res://assets/roundCornerA.obj"
+dest_files=["res://.godot/imported/roundCornerA.obj-cbfa1d60d5f17f9558111769b5a42b20.mesh", "res://.godot/imported/roundCornerA.obj-cbfa1d60d5f17f9558111769b5a42b20.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

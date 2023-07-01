@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://db1pl05pwhh8b"
+path="res://.godot/imported/skewCorner.obj-8fe53cf52b96a477791f6b95fc9f74ba.mesh"
+
+[deps]
+
+files=["res://.godot/imported/skewCorner.obj-8fe53cf52b96a477791f6b95fc9f74ba.mesh"]
+
+source_file="res://assets/skewCorner.obj"
+dest_files=["res://.godot/imported/skewCorner.obj-8fe53cf52b96a477791f6b95fc9f74ba.mesh", "res://.godot/imported/skewCorner.obj-8fe53cf52b96a477791f6b95fc9f74ba.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

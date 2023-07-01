@@ -1,8 +1,2 @@
-.idea/
-.vscode/
-.vs/
-cmake-build-debug/
-bin/
-build/
-out/
-CMakeSettings.json
+# Godot 4+ specific ignores
+.godot/
